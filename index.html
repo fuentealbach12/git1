@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatitos Tristes</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- 1. COMPONENTE: Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-heart-fill text-danger me-2"></i>Gatitos Tristes
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adopcion">Adopción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#consejos">Consejos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1.2 Cabecera -->
+    <div id="inicio" class="container text-center py-5 mt-5">
+        <i class="bi bi-house-heart display-1 text-primary mb-3"></i>
+        <h1 class="display-5 fw-bold">Encuentra a tu gato ideal</h1>
+        <p class="lead text-muted mx-auto" style="max-width: 600px;">
+            Decenas de gatitos pequeñitos buscan un hogar. Busca al que más te guste.
+        </p>
+    </div>
+
+    <!-- 2. COMPONENTE: Tarjetas -->
+    <div id="adopcion" class="container py-5">
+        <h2 class="text-center mb-5">Gatos Esperando un Hogar</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/pics/leon.jpg" class="card-img-top" alt="Gato blanco y negro">
+                    <div class="card-body">
+                        <h5 class="card-title">Leoncio</h5>
+                        <p class="card-text">Gatito de 18 meses y 190 kilos, muy juguetón.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/pics/tigre.webp" class="card-img-top" alt="Gato gris">
+                    <div class="card-body">
+                        <h5 class="card-title">Luna</h5>
+                        <p class="card-text">Gata de 2 años, tranquila y muy independiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/pics/colocolo.jpg" class="card-img-top" alt="Gato naranja">
+                    <div class="card-body">
+                        <h5 class="card-title">Tom</h5>
+                        <p class="card-text">Gato de 4 años, cariñoso y guardián.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/pics/cerval.jpg" class="card-img-top" alt="Gato blanco y negro">
+                    <div class="card-body">
+                        <h5 class="card-title">Michi</h5>
+                        <p class="card-text">Gatito de 6 meses, curioso y juguetón.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/pics/puma.jpg" class="card-img-top" alt="Gato gris">
+                    <div class="card-body">
+                        <h5 class="card-title">Luna</h5>
+                        <p class="card-text">Gata de 2 años, tranquila y muy independiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/pics/siberiano.webp" class="card-img-top" alt="Gato naranja">
+                    <div class="card-body">
+                        <h5 class="card-title">Tom</h5>
+                        <p class="card-text">Gato de 4 años, cariñoso y guardián.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. COMPONENTE: Accordion -->
+    <div id="consejos" class="container py-5 mb-5">
+        <h2 class="text-center mb-5">Primeros Días con tu Gato</h2>
+        <div class="accordion" id="accordionConsejos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. Te va a romper todos los sillones.
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionConsejos">
+                    <div class="accordion-body">
+                        Tu gato necesita echar a perder tu vida. 
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. Alimentación
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionConsejos">
+                    <div class="accordion-body">
+                        Estos gatos comen súper poco, con un novillo diario basta.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. Paciencia
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionConsejos">
+                    <div class="accordion-body">
+                        La necesitarás.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Ir Arriba -->
+    <button id="btnTop"
+        class="btn btn-primary position-fixed bottom-0 end-0 m-4 z-3 rounded-circle shadow d-flex align-items-center justify-content-center"
+        style="width: 50px; height: 50px;">
+        <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p class="mb-0">Javascript y Gatos 2026</p>
+    </footer>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivo para la práctica -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
